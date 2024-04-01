@@ -5,7 +5,6 @@ import 'package:audioplayers/audioplayers.dart';
 void main() {
   return runApp(const MuzicApp());
 }
-
 class MuzicApp extends StatefulWidget {
   const MuzicApp({super.key});
 
@@ -64,7 +63,6 @@ class _PlayerWidgetState extends State<PlayerWidget> {
   PlayerState? _playerState;
   Duration? _duration;
   Duration? _position;
-
   StreamSubscription? _durationSubscription;
   StreamSubscription? _positionSubscription;
   StreamSubscription? _playerCompleteSubscription;
