@@ -44,7 +44,10 @@ class _MuzicAppState extends State<MuzicApp> {
           backgroundColor: Colors.greenAccent,
           title: const Text('Muzic'),
         ),
-        body:  Center(child: PlayerWidget(player: player)),
+        body:  Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(child: PlayerWidget(player: player)),
+        ),
       ),
     );
   }
